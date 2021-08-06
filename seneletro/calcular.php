@@ -10,21 +10,23 @@ $endereco= $_POST["endereco"];
 if($quilowattsHora >120) {
 
     
-$valorConta= (0.42 * $quilowattsHora)
+$valorConta= (0.42 * $quilowattsHora);
 
 
-}else 
-if($valorConta =<120) {
+} elseif ($valorConta <= 120) {
 
-    $valorConta= (0.32 * $quilowattsHora)
+    $valorConta= (0.32 * $quilowattsHora);
 }
 
 
-echo "Conta de luz $nomeCompletoCliente <br>";
+echo "Conta de luz de $nomeCompletoCliente <br>";
 
-echo "$endereco";
+echo "$endereco <br>";
 
-echo "Consumo: $"
+echo "Consumo: $quilowattsHora kwh <br>";
+
+echo "O valor a pagar: R$ $valorConta";
+
 
 
 
