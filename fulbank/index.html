@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech Fulbank</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <form method="POST" action="./salario.php">
+        <h1>Fintech Fulbank</h1>
+        <label for="nomeFuncionario" >Nome</label>
+        <input id="nomeFuncionario" name="nomeFuncionario" required/>
+
+        <label for="salarioAtual">Salário Atual</label>
+        <input id="salarioAtual" name="salarioAtual" required/>
+
+
+        <div>
+            <label for="">Masculino</label>
+            <input id="radio" type ="radio" name="opcao" value="op1"> 
+         </div>
+        <div>
+            <label for="">Feminino</label>
+            <input id="radio" type ="radio" name="opcao" value="op2"> </div>
+        <div>
+            <label for="">Outro</label>
+            <input id="radio" type ="radio" name="opcao" value="op3"></div>
+
+        <br><br>
+
+        <select name="cargo" id=cargo>
+            <option>Analista</option>
+            <option>Desenvolvedor(a)</option>
+            <option>Engenheiro(a) Junior</option>
+            <option>Engenheiro(a) Pleno</option>
+            <option>Engenheiro(a) Senior</option>
+            <option>Coordenador(a)</option>
+            <option>Gerente</option>
+        </select>
+<br><br>
+        <button><b>GERAR SALÁRIO</b></button>
+    </form>
+</body>
+</html>
