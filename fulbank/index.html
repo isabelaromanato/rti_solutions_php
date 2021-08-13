@@ -14,32 +14,40 @@
         <input id="nomeFuncionario" name="nomeFuncionario" required/>
 
         <label for="salarioAtual">Salário Atual</label>
-        <input id="salarioAtual" name="salarioAtual" required/>
+        <input  type= "number" id="salarioAtual" name="salarioAtual" required/>
 
 
-        <div>
-            <label for="">Masculino</label>
-            <input id="radio" type ="radio" name="opcao" value="op1"> 
+        <div class="input-radio">
+            <input id="masculino" type ="radio" name="genero" value="m"> 
+            <label for="genero">Masculino</label>
          </div>
-        <div>
-            <label for="">Feminino</label>
-            <input id="radio" type ="radio" name="opcao" value="op2"> </div>
-        <div>
-            <label for="">Outro</label>
-            <input id="radio" type ="radio" name="opcao" value="op3"></div>
-
-        <br><br>
+        <div class="input-radio">
+            <input id="feminino" type ="radio" name="genero" value="f">
+            <label for="genero">Feminino</label>
+        </div>
+        <div class="input-radio" style="margin-bottom: 10px;">
+            <input id="outro" type ="radio" name="genero" value="">
+            <label for="genero">Outro</label>
+           
+        </div>
 
         <select name="cargo" id=cargo>
+            <option>SELECIONE</option>
             <option>Analista</option>
-            <option>Desenvolvedor(a)</option>
+            <option>Desenvolvedor Back-end</option>
+            <option>Desenvolvedor Front-end</option>
             <option>Engenheiro(a) Junior</option>
             <option>Engenheiro(a) Pleno</option>
             <option>Engenheiro(a) Senior</option>
+            <option>Arquitetos</option>
+            <option>DBA</option>
+            <option>QA</option>
+            <option>DevOps</option>
+            <option>Designer UI|UX</option>
             <option>Coordenador(a)</option>
-            <option>Gerente</option>
+            <option>Gerente de produto</option>
         </select>
-<br><br>
+
         <button><b>GERAR SALÁRIO</b></button>
     </form>
 </body>

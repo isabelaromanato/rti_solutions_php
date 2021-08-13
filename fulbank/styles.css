@@ -19,7 +19,9 @@ body{
     background-image: linear-gradient(#ccc, white);
 }
 
-form{
+
+
+form, main{
     display: flex;
     flex-direction: column;
 
@@ -32,7 +34,7 @@ h1{
     margin-bottom: 10px;
 }
 
-input{
+input, select{
     width: 100%;
     margin-bottom: 10px;
     height: 30px;
@@ -65,8 +67,18 @@ button:hover{
     
 }
 
-input .radio {
+.input-radio {
     display: flex;
-    float: right;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
 
 }
+
+.input-radio input{
+
+    width: 20px;
+    margin: 0;
+}
+

@@ -15,6 +15,6 @@ $valorSaida= ($pedagios * $valorFixoPedagio + $distancia * $valorPorKm);
 
 
 
-echo "<br> A viagem de $cidadeOrigem à $cidadeDestino irá custar total de <font size='6'> <b> R$ $valorSaida </b> </font>";
+echo "A viagem de $cidadeOrigem à $cidadeDestino irá custar total de <font size='6'> <b> R$ $valorSaida </b> </font>";
 
 //CALCULAR VALOR DO FRETE

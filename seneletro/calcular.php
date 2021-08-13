@@ -22,6 +22,8 @@ echo "<font color='#FF0000'> Consumo: $quilowattsHora kWh </font> <br>";
 echo "O valor a pagar:  <font size='5'> <b> R$$valorConta </b> </font> <br>";
 
 
+
+
 } else if ($quilowattsHora <= 120) {
 
     $valorConta= (0.32 * $quilowattsHora);
@@ -39,3 +41,7 @@ echo $agradecimento;
 
 
 ?>
+
+
+
+
