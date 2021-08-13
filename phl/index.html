@@ -9,18 +9,18 @@
 </head>
 <body>
     <form method="POST" action="./calcular.php">
-        <h1>RTI Solutions</h1>
+        <h1>Calcular Frete PHL</h1>
         <label for="cidadeOrigem" >Cidade de Origem</label>
-        <input id="cidadeOrigem" name="cidadeOrigem" />
+        <input id="cidadeOrigem" name="cidadeOrigem" required = "true"/>
 
         <label for="cidadeDestino">Cidade de Destino</label>
-        <input id="cidadeDestino" name="cidadeDestino" />
+        <input id="cidadeDestino" name="cidadeDestino" required = "true" />
 
         <label for="distancia">Distância em KM</label>
-        <input id="distancia" name="distancia" />
+        <input type = "number" id="distancia" name="distancia" required = "true"/>
 
         <label for="pedagios">Quant. de pedágios</label>
-        <input id="pedagios" name="pedagios" />
+        <input type= "number" id="pedagios" name="pedagios" required = "true"/>
 
         
 
